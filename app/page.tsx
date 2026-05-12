@@ -1,4 +1,4 @@
-import { Activity, ArrowUpRight, Clock3, Cpu, Sparkles } from "lucide-react";
+import { Activity, ArrowUpRight, Clock3, Cpu, Sparkles, Github } from "lucide-react";
 import { StatCard } from "@/components/StatCard";
 import { ActivityFeed } from "@/components/ActivityFeed";
 import { MiniChart } from "@/components/MiniChart";
@@ -6,17 +6,17 @@ import { MiniChart } from "@/components/MiniChart";
 const stats = [
   {
     title: "Projects",
-    value: 18,
+    value: 3,
     suffix: "",
-    change: "+12.4%",
+    change: "Active",
     tone: "violet" as const,
     icon: "briefcase" as const,
   },
   {
-    title: "Tasks",
-    value: 246,
+    title: "Deployments",
+    value: 1,
     suffix: "",
-    change: "+28 this week",
+    change: "Vercel + Workers",
     tone: "indigo" as const,
     icon: "check" as const,
   },
@@ -29,13 +29,21 @@ const stats = [
     icon: "activity" as const,
   },
   {
-    title: "Visitors",
-    value: 12840,
+    title: "Stacks",
+    value: 3,
     suffix: "",
-    change: "+18.2%",
+    change: "Next.js / Flutter / Cloudflare",
     tone: "cyan" as const,
     icon: "users" as const,
   },
+];
+
+const quickLinks = [
+  { label: "Jim Dashboard", url: "https://jim-dashboard-five.vercel.app", live: true },
+  { label: "Admin Panel (local)", url: "https://alike-card-correction-model.trycloudflare.com", live: false },
+  { label: "Flutter App (local)", url: "https://quotations-patch-integrate-butterfly.trycloudflare.com", live: false },
+  { label: "GitHub — jim-dashboard", url: "https://github.com/govindhansv/jim-dashboard", live: true },
+  { label: "GitHub — crakitup_app", url: "https://github.com/govindhansv/crakitup_app", live: true },
 ];
 
 export default function Home() {
@@ -46,14 +54,14 @@ export default function Home() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/25 bg-indigo-400/10 px-3 py-1 text-sm font-medium text-indigo-200">
               <Sparkles className="h-4 w-4" />
-              Live workspace overview
+              Development workspace
             </div>
             <div className="max-w-3xl space-y-4">
               <h1 className="text-4xl font-semibold tracking-normal text-white sm:text-5xl lg:text-6xl">
                 Welcome back, Jim.
               </h1>
               <p className="text-base leading-7 text-slate-300 sm:text-lg">
-                Monitor delivery, system health, and audience activity from a focused command center built for fast daily review.
+                Crakitup admin panel, Flutter app, and this dashboard — all running from your VPS.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -63,27 +71,33 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
                 <Clock3 className="h-4 w-4" />
-                Updated 4 min ago
+                2 tunnels active
               </div>
             </div>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-slate-950/50 p-5">
-            <div className="mb-5 flex items-center justify-between">
+            <div className="mb-2 flex items-center justify-between">
               <div>
-                <p className="text-sm text-slate-400">Throughput</p>
-                <p className="mt-1 text-2xl font-semibold text-white">84.6%</p>
+                <p className="text-sm text-slate-400">Quick Links</p>
               </div>
               <div className="rounded-2xl bg-indigo-500/15 p-3 text-indigo-200">
                 <Cpu className="h-6 w-6" />
               </div>
             </div>
-            <MiniChart />
-            <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4 text-sm">
-              <span className="text-slate-400">Delivery velocity</span>
-              <span className="flex items-center gap-1 font-medium text-emerald-300">
-                +9.8% <ArrowUpRight className="h-4 w-4" />
-              </span>
+            <div className="space-y-2.5">
+              {quickLinks.map((link) => (
+                <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer"
+                   className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+                  {link.live ? (
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
+                  ) : (
+                    <span className="h-2 w-2 rounded-full bg-amber-500 shrink-0" />
+                  )}
+                  <span className="truncate">{link.label}</span>
+                  <ArrowUpRight className="h-3 w-3 shrink-0 ml-auto opacity-50" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
