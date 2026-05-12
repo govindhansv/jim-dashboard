@@ -1,4 +1,4 @@
-import { Activity, ArrowUpRight, Clock3, Cpu, Sparkles, Github } from "lucide-react";
+import { Activity, ArrowUpRight, Clock3, Cpu, Sparkles } from "lucide-react";
 import { StatCard } from "@/components/StatCard";
 import { ActivityFeed } from "@/components/ActivityFeed";
 import { MiniChart } from "@/components/MiniChart";
