@@ -40,7 +40,7 @@ export default function ChangelogPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-semibold text-white">Changelog</h1>
+        <h1 className="text-3xl font-semibold text-slate-900">Changelog</h1>
         <p className="mt-1 text-slate-400">Release history and updates</p>
       </div>
 
@@ -54,7 +54,7 @@ export default function ChangelogPage() {
             <div className={`relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border ${
               release.status === "current"
                 ? "border-blue-400/30 bg-blue-500/20 text-blue-200"
-                : "border-white/10 bg-white/[0.06] text-slate-400"
+                : "border-slate-200 bg-white text-slate-400"
             }`}>
               {release.status === "current" ? (
                 <CheckCircle2 className="h-5 w-5" />
@@ -64,10 +64,10 @@ export default function ChangelogPage() {
             </div>
 
             {/* Content */}
-            <div className="flex-1 rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl">
+            <div className="flex-1 rounded-3xl border border-slate-200 bg-white p-6 ">
               <div className="mb-3 flex items-center gap-3">
-                <h2 className="text-lg font-semibold text-white">{release.version}</h2>
-                <span className="rounded-full bg-white/5 px-3 py-0.5 text-xs text-slate-500">
+                <h2 className="text-lg font-semibold text-slate-900">{release.version}</h2>
+                <span className="rounded-full bg-white/5 px-3 py-0.5 text-xs text-slate-400">
                   {release.date}
                 </span>
                 {release.status === "current" && (
@@ -78,7 +78,7 @@ export default function ChangelogPage() {
               </div>
               <ul className="space-y-2">
                 {release.changes.map((change, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-600" />
                     {change}
                   </li>

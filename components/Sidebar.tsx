@@ -22,14 +22,14 @@ export function Sidebar() {
 
   return (
     <>
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-72 border-r border-white/10 bg-slate-950/70 p-5 backdrop-blur-2xl lg:block">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-72 border-r border-slate-200 bg-white/70 p-5 backdrop-blur-2xl lg:block">
         <div className="flex h-full flex-col">
           <Link href="/" className="flex items-center gap-3 rounded-2xl px-2 py-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-600 text-white shadow-lg shadow-blue-500/25">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-sky-400 text-slate-900 shadow-sm shadow-blue-500/20">
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
-              <p className="text-base font-semibold text-white">Jim Dashboard</p>
+              <p className="text-base font-semibold text-slate-900">Jim Dashboard</p>
               <p className="text-sm text-slate-400">Control center</p>
             </div>
           </Link>
@@ -46,13 +46,13 @@ export function Sidebar() {
                   href={item.href}
                   className={`group flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? "bg-blue-500/20 text-white shadow-lg shadow-blue-950/30 ring-1 ring-blue-300/20"
-                      : "text-slate-400 hover:bg-white/8 hover:text-white"
+                      ? "bg-blue-100 text-slate-900 shadow-sm shadow-blue-200/50 ring-0"
+                      : "text-slate-400 hover:bg-slate-100 hover:text-slate-900"
                   }`}
                 >
                   <Icon
                     className={`h-5 w-5 transition-transform duration-200 group-hover:scale-110 ${
-                      isActive ? "text-blue-200" : "text-slate-500 group-hover:text-blue-200"
+                      isActive ? "text-blue-200" : "text-slate-400 group-hover:text-blue-200"
                     }`}
                   />
                   {item.name}
@@ -61,14 +61,14 @@ export function Sidebar() {
             })}
           </nav>
 
-          <div className="mt-auto rounded-3xl border border-white/10 bg-white/[0.055] p-4">
-            <p className="text-sm font-medium text-white">Workspace health</p>
+          <div className="mt-auto rounded-3xl border border-slate-200 bg-white p-4">
+            <p className="text-sm font-medium text-slate-900">Workspace health</p>
             <div className="mt-4 space-y-3">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-slate-400">Deployments</span>
-                <span className="text-emerald-300">Stable</span>
+                <span className="text-emerald-600">Stable</span>
               </div>
-              <div className="h-2 overflow-hidden rounded-full bg-slate-800">
+              <div className="h-2 overflow-hidden rounded-full bg-slate-200">
                 <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-blue-500 to-cyan-400" />
               </div>
             </div>
@@ -76,7 +76,7 @@ export function Sidebar() {
         </div>
       </aside>
 
-      <nav className="fixed inset-x-3 bottom-3 z-50 rounded-3xl border border-white/10 bg-slate-950/85 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl lg:hidden">
+      <nav className="fixed inset-x-3 bottom-3 z-50 rounded-3xl border border-slate-200 bg-white/85 p-2 shadow-lg shadow-slate-300/60 backdrop-blur-2xl lg:hidden">
         <div className="grid grid-cols-4 gap-1">
           {navigation.map((item) => {
             const isActive =
@@ -90,8 +90,8 @@ export function Sidebar() {
                 aria-label={item.name}
                 className={`flex min-h-14 flex-col items-center justify-center gap-1 rounded-2xl text-[0.7rem] font-medium transition-all duration-200 ${
                   isActive
-                    ? "bg-blue-500/25 text-white"
-                    : "text-slate-400 hover:bg-white/8 hover:text-white"
+                    ? "bg-blue-100 text-slate-900"
+                    : "text-slate-400 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
                 <Icon className="h-5 w-5" />

@@ -23,10 +23,10 @@ const icons = {
 };
 
 const tones = {
-  violet: "from-cyan-500/24 to-fuchsia-500/10 text-cyan-200 ring-cyan-300/20",
-  indigo: "from-blue-500/24 to-blue-500/10 text-blue-200 ring-blue-300/20",
-  emerald: "from-emerald-500/20 to-teal-500/10 text-emerald-200 ring-emerald-300/20",
-  cyan: "from-cyan-500/20 to-sky-500/10 text-cyan-200 ring-cyan-300/20",
+  violet: "from-sky-100 to-fuchsia-100 text-cyan-800 ring-0",
+  indigo: "from-blue-100 to-blue-50 text-blue-800 ring-0",
+  emerald: "from-emerald-100 to-teal-50 text-emerald-700 ring-0",
+  cyan: "from-sky-100 to-cyan-50 text-cyan-800 ring-0",
 };
 
 export function StatCard({ title, value, suffix = "", change, icon, tone }: StatCardProps) {
@@ -59,11 +59,11 @@ export function StatCard({ title, value, suffix = "", change, icon, tone }: Stat
   });
 
   return (
-    <article className="group rounded-3xl border border-white/10 bg-white/[0.055] p-5 shadow-xl shadow-slate-950/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-300/25 hover:bg-white/[0.075]">
+    <article className="group rounded-3xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/80  transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-300/25 hover:bg-slate-50">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-medium text-slate-400">{title}</p>
-          <p className="mt-3 text-3xl font-semibold tracking-normal text-white">
+          <p className="mt-3 text-3xl font-semibold tracking-normal text-slate-900">
             {formattedValue}
             {suffix}
           </p>
@@ -73,7 +73,7 @@ export function StatCard({ title, value, suffix = "", change, icon, tone }: Stat
         </div>
       </div>
       <p className="mt-5 text-sm text-slate-400">
-        <span className="font-medium text-emerald-300">{change}</span>
+        <span className="font-medium text-emerald-600">{change}</span>
       </p>
     </article>
   );

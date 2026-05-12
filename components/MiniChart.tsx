@@ -2,7 +2,7 @@ const points = "0,92 38,70 76,78 114,38 152,46 190,24 228,32 266,16 304,28 342,1
 
 export function MiniChart() {
   return (
-    <div className="relative h-40 overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70">
+    <div className="relative h-40 overflow-hidden rounded-3xl border border-slate-200 bg-slate-100/80">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:36px_36px]" />
       <svg viewBox="0 0 342 112" className="absolute inset-4 h-[calc(100%-2rem)] w-[calc(100%-2rem)] overflow-visible">
         <defs>
