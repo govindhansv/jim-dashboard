@@ -1,4 +1,4 @@
-import { ExternalLink, GitBranch, Github, Key, Globe, Monitor, User } from "lucide-react";
+import { ExternalLink, GitBranch, FolderGit, Key, Globe, Monitor, User } from "lucide-react";
 
 interface ProjectLink {
   label: string;
@@ -114,7 +114,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         )}
         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-          <Github className="h-4 w-4" />
+          <FolderGit className="h-4 w-4" />
           <span className="truncate">{project.githubUrl}</span>
           <ExternalLink className="h-3 w-3 shrink-0 ml-auto" />
         </a>
