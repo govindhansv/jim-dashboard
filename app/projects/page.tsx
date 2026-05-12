@@ -57,6 +57,15 @@ const projects: Project[] = [
     githubUrl: "https://github.com/govindhansv/crakitup_app",
     notes: "Flutter web build, served locally. API points to the admin panel tunnel.",
   },
+  {
+    name: "Git Monitor",
+    status: "Active",
+    description: "Live git changes tracker with Codex CLI log viewer. Shows real-time file diffs, commits, and status across all repos.",
+    tech: ["Node.js", "SSE", "Git API", "Real-time"],
+    localUrl: "https://met-meetup-emotions-recent.trycloudflare.com",
+    githubUrl: "https://github.com/govindhansv/jim-dashboard",
+    notes: "Auto-refreshes every 3s via Server-Sent Events. Click commits to view full diffs.",
+  },
 ];
 
 const ProjectCard = ({ project }: { project: Project }) => {

@@ -44,6 +44,7 @@ const quickLinks = [
   { label: "Flutter App (local)", url: "https://quotations-patch-integrate-butterfly.trycloudflare.com", live: false },
   { label: "GitHub — jim-dashboard", url: "https://github.com/govindhansv/jim-dashboard", live: true },
   { label: "GitHub — crakitup_app", url: "https://github.com/govindhansv/crakitup_app", live: true },
+  { label: "Git Monitor", url: "https://met-meetup-emotions-recent.trycloudflare.com", live: false },
 ];
 
 export default function Home() {
