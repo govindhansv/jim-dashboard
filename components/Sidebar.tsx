@@ -25,7 +25,7 @@ export function Sidebar() {
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-72 border-r border-white/10 bg-slate-950/70 p-5 backdrop-blur-2xl lg:block">
         <div className="flex h-full flex-col">
           <Link href="/" className="flex items-center gap-3 rounded-2xl px-2 py-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-400 to-violet-600 text-white shadow-lg shadow-indigo-500/25">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-600 text-white shadow-lg shadow-blue-500/25">
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
@@ -46,13 +46,13 @@ export function Sidebar() {
                   href={item.href}
                   className={`group flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? "bg-indigo-500/20 text-white shadow-lg shadow-indigo-950/30 ring-1 ring-indigo-300/20"
+                      ? "bg-blue-500/20 text-white shadow-lg shadow-blue-950/30 ring-1 ring-blue-300/20"
                       : "text-slate-400 hover:bg-white/8 hover:text-white"
                   }`}
                 >
                   <Icon
                     className={`h-5 w-5 transition-transform duration-200 group-hover:scale-110 ${
-                      isActive ? "text-indigo-200" : "text-slate-500 group-hover:text-indigo-200"
+                      isActive ? "text-blue-200" : "text-slate-500 group-hover:text-blue-200"
                     }`}
                   />
                   {item.name}
@@ -69,7 +69,7 @@ export function Sidebar() {
                 <span className="text-emerald-300">Stable</span>
               </div>
               <div className="h-2 overflow-hidden rounded-full bg-slate-800">
-                <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-indigo-500 to-violet-400" />
+                <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-blue-500 to-cyan-400" />
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function Sidebar() {
                 aria-label={item.name}
                 className={`flex min-h-14 flex-col items-center justify-center gap-1 rounded-2xl text-[0.7rem] font-medium transition-all duration-200 ${
                   isActive
-                    ? "bg-indigo-500/25 text-white"
+                    ? "bg-blue-500/25 text-white"
                     : "text-slate-400 hover:bg-white/8 hover:text-white"
                 }`}
               >

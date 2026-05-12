@@ -10,9 +10,9 @@ export default function AnalyticsPage() {
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {[
-          { title: "Page Views", value: "284.5K", change: "+12.3%", icon: BarChart3, tone: "from-indigo-500/20 to-blue-500/10 text-indigo-200" },
+          { title: "Page Views", value: "284.5K", change: "+12.3%", icon: BarChart3, tone: "from-blue-500/20 to-blue-500/10 text-blue-200" },
           { title: "Active Users", value: "3,842", change: "+8.1%", icon: Users, tone: "from-emerald-500/20 to-teal-500/10 text-emerald-200" },
-          { title: "Conversion", value: "4.7%", change: "+1.2%", icon: TrendingUp, tone: "from-violet-500/20 to-fuchsia-500/10 text-violet-200" },
+          { title: "Conversion", value: "4.7%", change: "+1.2%", icon: TrendingUp, tone: "from-cyan-500/20 to-fuchsia-500/10 text-cyan-200" },
         ].map((card) => (
           <article key={card.title} className="rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl">
             <div className="flex items-start justify-between">

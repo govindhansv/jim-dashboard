@@ -23,8 +23,8 @@ const icons = {
 };
 
 const tones = {
-  violet: "from-violet-500/24 to-fuchsia-500/10 text-violet-200 ring-violet-300/20",
-  indigo: "from-indigo-500/24 to-blue-500/10 text-indigo-200 ring-indigo-300/20",
+  violet: "from-cyan-500/24 to-fuchsia-500/10 text-cyan-200 ring-cyan-300/20",
+  indigo: "from-blue-500/24 to-blue-500/10 text-blue-200 ring-blue-300/20",
   emerald: "from-emerald-500/20 to-teal-500/10 text-emerald-200 ring-emerald-300/20",
   cyan: "from-cyan-500/20 to-sky-500/10 text-cyan-200 ring-cyan-300/20",
 };
@@ -59,7 +59,7 @@ export function StatCard({ title, value, suffix = "", change, icon, tone }: Stat
   });
 
   return (
-    <article className="group rounded-3xl border border-white/10 bg-white/[0.055] p-5 shadow-xl shadow-slate-950/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300/25 hover:bg-white/[0.075]">
+    <article className="group rounded-3xl border border-white/10 bg-white/[0.055] p-5 shadow-xl shadow-slate-950/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-300/25 hover:bg-white/[0.075]">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-medium text-slate-400">{title}</p>

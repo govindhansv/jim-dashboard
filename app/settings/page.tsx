@@ -17,8 +17,8 @@ export default function SettingsPage() {
 
       <section className="grid gap-4 sm:grid-cols-2">
         {sections.map((section) => (
-          <button key={section.title} className="group flex items-start gap-4 rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl text-left transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300/25 hover:bg-white/[0.075">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-indigo-500/15 text-indigo-200">
+          <button key={section.title} className="group flex items-start gap-4 rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl text-left transition-all duration-300 hover:-translate-y-1 hover:border-blue-300/25 hover:bg-white/[0.075">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-500/15 text-blue-200">
               <section.icon className="h-6 w-6" />
             </div>
             <div>

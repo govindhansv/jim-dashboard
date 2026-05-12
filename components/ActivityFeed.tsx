@@ -39,8 +39,8 @@ export function ActivityFeed() {
           const Icon = activity.icon;
 
           return (
-            <div key={activity.title} className="flex gap-4 rounded-2xl border border-white/8 bg-slate-950/35 p-4 transition-all duration-200 hover:border-indigo-300/20 hover:bg-slate-900/70">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-indigo-500/15 text-indigo-200">
+            <div key={activity.title} className="flex gap-4 rounded-2xl border border-white/8 bg-slate-950/35 p-4 transition-all duration-200 hover:border-blue-300/20 hover:bg-slate-900/70">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-blue-500/15 text-blue-200">
                 <Icon className="h-5 w-5" />
               </div>
               <div className="min-w-0 flex-1">

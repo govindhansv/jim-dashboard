@@ -50,10 +50,10 @@ const quickLinks = [
 export default function Home() {
   return (
     <div className="space-y-6">
-      <section className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-indigo-950/40 backdrop-blur-xl sm:p-8">
+      <section className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-blue-950/40 backdrop-blur-xl sm:p-8">
         <div className="grid gap-8 lg:grid-cols-[1.4fr_0.8fr] lg:items-center">
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/25 bg-indigo-400/10 px-3 py-1 text-sm font-medium text-indigo-200">
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/25 bg-blue-400/10 px-3 py-1 text-sm font-medium text-blue-200">
               <Sparkles className="h-4 w-4" />
               Development workspace
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
                 <Activity className="h-4 w-4" />
                 Systems nominal
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+              <div className="flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
                 <Clock3 className="h-4 w-4" />
                 2 tunnels active
               </div>
@@ -82,7 +82,7 @@ export default function Home() {
               <div>
                 <p className="text-sm text-slate-400">Quick Links</p>
               </div>
-              <div className="rounded-2xl bg-indigo-500/15 p-3 text-indigo-200">
+              <div className="rounded-2xl bg-blue-500/15 p-3 text-blue-200">
                 <Cpu className="h-6 w-6" />
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
               <p className="text-sm text-slate-400">Operational load</p>
               <h2 className="mt-1 text-2xl font-semibold text-white">Weekly capacity</h2>
             </div>
-            <span className="rounded-full bg-violet-500/15 px-3 py-1 text-sm text-violet-200">
+            <span className="rounded-full bg-cyan-500/15 px-3 py-1 text-sm text-cyan-200">
               Dummy data
             </span>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
             {[46, 64, 52, 78, 72, 88, 69, 91, 84, 76, 95, 87].map((height, index) => (
               <div key={index} className="group flex h-full items-end">
                 <div
-                  className="w-full rounded-t-xl bg-gradient-to-t from-indigo-600 to-violet-300 opacity-80 transition-all duration-300 group-hover:opacity-100 group-hover:shadow-lg group-hover:shadow-violet-500/20"
+                  className="w-full rounded-t-xl bg-gradient-to-t from-blue-600 to-cyan-300 opacity-80 transition-all duration-300 group-hover:opacity-100 group-hover:shadow-lg group-hover:shadow-cyan-500/20"
                   style={{ height: `${height}%` }}
                 />
               </div>

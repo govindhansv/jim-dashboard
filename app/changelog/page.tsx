@@ -53,7 +53,7 @@ export default function ChangelogPage() {
             {/* Timeline dot */}
             <div className={`relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border ${
               release.status === "current"
-                ? "border-indigo-400/30 bg-indigo-500/20 text-indigo-200"
+                ? "border-blue-400/30 bg-blue-500/20 text-blue-200"
                 : "border-white/10 bg-white/[0.06] text-slate-400"
             }`}>
               {release.status === "current" ? (
@@ -71,7 +71,7 @@ export default function ChangelogPage() {
                   {release.date}
                 </span>
                 {release.status === "current" && (
-                  <span className="rounded-full bg-indigo-500/15 px-3 py-0.5 text-xs text-indigo-200">
+                  <span className="rounded-full bg-blue-500/15 px-3 py-0.5 text-xs text-blue-200">
                     Latest
                   </span>
                 )}

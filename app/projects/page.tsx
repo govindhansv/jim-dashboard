@@ -75,7 +75,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       : "bg-amber-500/15 text-amber-200";
 
   return (
-    <article className="group rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300/25 hover:bg-white/[0.075]">
+    <article className="group rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-300/25 hover:bg-white/[0.075]">
       {/* Header */}
       <div className="flex items-start justify-between">
         <h2 className="text-lg font-semibold text-white">{project.name}</h2>
@@ -88,7 +88,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       {/* Tech tags */}
       <div className="mt-3 flex flex-wrap gap-2">
         {project.tech.map((t) => (
-          <span key={t} className="rounded-full bg-indigo-500/10 px-2.5 py-0.5 text-xs text-indigo-300">
+          <span key={t} className="rounded-full bg-blue-500/10 px-2.5 py-0.5 text-xs text-blue-300">
             {t}
           </span>
         ))}
@@ -131,7 +131,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             {project.credentials.map((cred) => (
               <div key={cred.email} className="flex items-center gap-2 text-xs">
                 <span className={`rounded px-2 py-0.5 font-medium ${
-                  cred.role === "Super Admin" ? "bg-violet-500/20 text-violet-200" :
+                  cred.role === "Super Admin" ? "bg-cyan-500/20 text-cyan-200" :
                   cred.role === "Admin" ? "bg-blue-500/20 text-blue-200" :
                   "bg-slate-500/20 text-slate-300"
                 }`}>{cred.role}</span>

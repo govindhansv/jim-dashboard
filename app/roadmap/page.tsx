@@ -4,8 +4,8 @@ const quarters = [
   {
     label: "Q1 2026",
     icon: Sparkles,
-    color: "text-violet-300",
-    bg: "bg-violet-500/15",
+    color: "text-cyan-300",
+    bg: "bg-cyan-500/15",
     items: [
       { title: "Dashboard v1.0 Release", done: true },
       { title: "Vercel Deployment Pipeline", done: true },
@@ -49,7 +49,7 @@ export default function RoadmapPage() {
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {quarters.map((q) => (
-          <div key={q.label} className="rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300/25">
+          <div key={q.label} className="rounded-3xl border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-300/25">
             <div className={`mb-4 flex items-center gap-3 rounded-2xl ${q.bg} p-3`}>
               <q.icon className={`h-6 w-6 ${q.color}`} />
               <h2 className={`text-lg font-semibold ${q.color}`}>{q.label}</h2>

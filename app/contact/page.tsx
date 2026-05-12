@@ -42,7 +42,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 required
-                className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-indigo-400/50"
+                className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-blue-400/50"
                 placeholder="Your name"
               />
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
               <input
                 type="email"
                 required
-                className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-indigo-400/50"
+                className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-blue-400/50"
                 placeholder="you@example.com"
               />
             </div>
@@ -64,13 +64,13 @@ export default function ContactPage() {
               <textarea
                 required
                 rows={5}
-                className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-indigo-400/50"
+                className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-blue-400/50"
                 placeholder="What's on your mind?"
               />
             </div>
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-indigo-500"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500"
             >
               <Send className="h-4 w-4" /> Send Message
             </button>
